@@ -16,15 +16,19 @@ public class ReportCard {
     /* Sports grade of the student*/
     private int sportGrade;
     /* Name of the student*/
-    public String StudentName = "Benjamin";
+    private String studentName;
+    /* Name of the University*/
+    public static final String university = "Udacity";
 
     /* Set the values for the Reportard*/
-    public ReportCard(int MatheGrade, int BiologicGrade, int GermanGrade, int InformaticsGrade, int SportGrade) {
+    public ReportCard(int MatheGrade, int BiologicGrade, int GermanGrade, int InformaticsGrade, int SportGrade, String Studentname) {
         mathGrade = MatheGrade;
         bioGrade = BiologicGrade;
         germanGrade = GermanGrade;
         infoGrade = InformaticsGrade;
         sportGrade = SportGrade;
+        studentName = Studentname;
+
     }
     /* Get the Math Grade*/
     public int getmathGrade() {
@@ -67,8 +71,9 @@ public class ReportCard {
         this.sportGrade = sportGrade;
     }
     /* Return in a readable format*/
+    @Override
     public String toString () {
-        return "Name of the student: " + StudentName + '\n' +
+        return "Name of the student: " + studentName + '\n' +
                 "Math grade: " + mathGrade + '\n' +
                 "Bioligie grade: " + bioGrade + '\n' +
                 "German grade: " + germanGrade + '\n' +
