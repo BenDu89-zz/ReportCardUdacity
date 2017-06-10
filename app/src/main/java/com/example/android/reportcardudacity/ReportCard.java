@@ -8,87 +8,86 @@ public class ReportCard {
     /* Name of the University*/
     public static final String university = "Udacity";
     /* Math grade of the student*/
-    private int mmathGrade;
+    private int mMathGrade;
     /* Biologic grade of the student*/
-    private int mbioGrade;
+    private int mBioGrade;
     /* German grade of the student*/
-    private int mgermanGrade;
+    private int mGermanGrade;
     /* Informatics grade of the student*/
-    private int minfoGrade;
+    private int mInfoGrade;
     /* Sports grade of the student*/
-    private int msportGrade;
+    private int mSportGrade;
     /* Name of the student*/
-    private String mstudentName;
+    private String mStudentName;
 
     /* Set the values for the Reportard*/
-    public ReportCard(int matheGrade, int biologicGrade, int germanGrade, int informaticsGrade, int sportGrade, String studentname) {
-        mmathGrade = matheGrade;
-        mbioGrade = biologicGrade;
-        mgermanGrade = germanGrade;
-        minfoGrade = informaticsGrade;
-        msportGrade = sportGrade;
-        mstudentName = studentname;
-
+    public ReportCard(int mathGrade, int biologicGrade, int germanGrade, int informaticsGrade, int sportGrade, String studentname) {
+        this.mMathGrade = mathGrade;
+        this.mBioGrade = biologicGrade;
+        this.mGermanGrade = germanGrade;
+        this.mInfoGrade = informaticsGrade;
+        this.mSportGrade = sportGrade;
+        this.mStudentName = studentname;
     }
     /* Get the Math Grade*/
     public int getMathGrade() {
-        return mmathGrade;
+        return mMathGrade;
     }
 
     /* Set the Math Grade*/
     public void setMathGrade(int mathGrade) {
-        this.mmathGrade = mathGrade;
+        this.mMathGrade = mathGrade;
     }
 
     /* Get the Bio Grade*/
     public int getBioGrade() {
-        return mbioGrade;
+        return mBioGrade;
     }
 
     /* Set the Bio Grade*/
     public void setBioGrade(int bioGrade) {
-        this.mbioGrade = bioGrade;
+        this.mBioGrade = bioGrade;
     }
 
     /* Get the German Grade*/
     public int getGermanGrade() {
-        return mgermanGrade;
+        return mGermanGrade;
     }
 
     /* Set the German Grade*/
     public void setGermanGrade(int germanGrade) {
-        this.mgermanGrade = germanGrade;
+        this.mGermanGrade = germanGrade;
     }
 
     /* Get the Infomatics Grade*/
     public int getInfoGrade() {
-        return minfoGrade;
+        return mInfoGrade;
     }
 
     /* Set the Informatics Grade*/
     public void setInfoGrade(int infoGrade) {
-        this.minfoGrade = infoGrade;
+        this.mInfoGrade = infoGrade;
     }
 
     /* Get the Sports Grade*/
     public int getSportGrade() {
-        return msportGrade;
+        return mSportGrade;
     }
 
     /* Set the Sports Grade*/
     public void setSportGrade(int sportGrade) {
-        this.msportGrade = sportGrade;
+        this.mSportGrade = sportGrade;
     }
 
     /* Return in a readable format*/
     @Override
     public String toString () {
         return "Name of the University: " + university + '\n' +
-                "Name of the student: " + mstudentName + '\n' +
-                "Math grade: " + mmathGrade + '\n' +
-                "Bioligie grade: " + mbioGrade + '\n' +
-                "German grade: " + mgermanGrade + '\n' +
-                "Informatics grade: " + minfoGrade + '\n' +
-                "Sport grade: " + msportGrade + '\n';
+                "Name of the student: " + mStudentName + '\n' +
+                "Math grade: " + mMathGrade + '\n' +
+                "Bioligie grade: " + mBioGrade + '\n' +
+                "German grade: " + mGermanGrade + '\n' +
+                "Informatics grade: " + mInfoGrade + '\n' +
+                "Sport grade: " + mSportGrade + '\n';
     }
 }
