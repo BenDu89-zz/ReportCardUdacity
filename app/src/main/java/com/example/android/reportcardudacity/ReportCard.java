@@ -83,7 +83,8 @@ public class ReportCard {
     /* Return in a readable format*/
     @Override
     public String toString () {
-        return "Name of the student: " + mstudentName + '\n' +
+        return "Name of the University: " + university + '\n' +
+                "Name of the student: " + mstudentName + '\n' +
                 "Math grade: " + mmathGrade + '\n' +
                 "Bioligie grade: " + mbioGrade + '\n' +
                 "German grade: " + mgermanGrade + '\n' +
